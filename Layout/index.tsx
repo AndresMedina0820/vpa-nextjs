@@ -1,3 +1,5 @@
+import WrapperHeader from "@common/components/core/WrapperHeader";
+import style from "@styles/modules/Layout.module.css";
 import React, { Fragment } from "react";
 import Navbar from "../common/components/core/Navbar";
 import Sidebar from "../common/components/core/Sidebar";
@@ -13,15 +15,14 @@ const Layout = ({ children }: LayoutProps) => {
         <Navbar />
         <Sidebar />
       </header>
-      <main className="container-fluid">{children}</main>
-      <style jsx>{`
-        main {
-          margin-left: 5rem;
-          width: calc(100% - 5rem);
-          height: 100%;
-          padding: 2rem;
-        }
-      `}</style>
+      <div className={style.wrapper}>
+        <WrapperHeader />
+      </div>
+      <main className={style.main}>
+        <div className="container-fluid">
+          {children}
+        </div>
+      </main>
     </Fragment>
   );
 };

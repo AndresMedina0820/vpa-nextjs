@@ -1,0 +1,11 @@
+.list {
+  transform: scale(1);
+  transition: all .3s ease-out;
+}
+
+.list:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: all .3s ease-in;
+}
+
