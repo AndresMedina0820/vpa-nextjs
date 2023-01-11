@@ -1,0 +1,11 @@
+.z-index-2 {
+  z-index: 2;
+}
+
+.bg-surface-blue {
+  background-color: var(--surface-blue);
+}
+
+.w-16-px {
+  width: 16px;
+}

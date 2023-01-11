@@ -1,0 +1,12 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 5rem;
+  height: 100vh;
+  background-color: #ffffff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-top: 3rem;
+  padding: 2rem 0;
+}
