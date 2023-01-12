@@ -1,6 +1,7 @@
 import { CustomerResponse } from "@modules/customers/interfaces/CustomersResponse.interfaces";
-import { Fragment, useEffect, useState } from "react";
 import style from "@styles/modules/ListComponent.module.css";
+import Error from "next/error";
+import { Fragment, useEffect, useState } from "react";
 
 const ListCustomer = () => {
   const [customers, setCustomers] = useState([]);
@@ -11,6 +12,10 @@ const ListCustomer = () => {
         .then((resp) => resp.json())
         .then((response) => {
           setCustomers(response);
+        })
+        .catch((e) => {
+          console.log(e)
+          return <Error statusCode={e} />
         });
     } catch (error) {
       throw console.log(error);

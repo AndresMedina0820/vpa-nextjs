@@ -9,3 +9,8 @@
 .w-16-px {
   width: 16px;
 }
+
+.form-select-lg {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
