@@ -9,7 +9,7 @@ const WrapperHeader = () => {
   return (
     <div className={style.wrapper}>
       <Breadcrumbs />
-      <h2 className="text-white text-capitalize">{title}</h2>
+      <h1 className="text-white text-capitalize">{title}</h1>
     </div>
   );
 };
